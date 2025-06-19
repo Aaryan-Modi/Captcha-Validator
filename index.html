@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captcha Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Captach Validator</h1>
+    <div class="box captcha">
+      <input id = "captchacode" type="text" value = "" disabled>
+      <button class="refresh"><img src="refresh.svg" alt=""></button>
+    </div>
+    <div class="box input-box">
+      <input id = "captchainput" type="text" placeholder="Enter Captcha Code Here">
+    </div>
+    <div class="possitivemessage displaynone">Entered Captcah is Correct</div>
+    <div class="negativemessage displaynone">Incorrect Captcha! Try Again</div>
+    <button class="submit disable">Submit</button>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
