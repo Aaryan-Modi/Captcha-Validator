@@ -57,7 +57,6 @@ function generateCaptcha() {
 
   captchaText = captcha;
   captchaCodeEl.value = captchaText.split("").join(" ");
-  console.log(captchaCodeEl.value);
   captchaInputEl.value = ``;
 }
 
@@ -67,8 +66,6 @@ function validateCaptcha() {
   if (captchaInputEl.value == ``) {
 
   }
-  console.log(captchaText);
-  console.log(captchaInputEl.value);
   if (captchaInputEl.value == captchaText) {
     posMessageEl.classList.remove("displaynone");
     negMessageEl.classList.add("displaynone");
